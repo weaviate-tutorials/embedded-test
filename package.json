@@ -1,0 +1,27 @@
+{
+  "name": "weaviate-embedded-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "dependencies": {
+    "weaviate-ts-client": "latest"
+  },
+  "scripts": {
+    "start": "tsc && node dist/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "@typescript-eslint/parser": "^5.57.0",
+    "eslint": "^8.37.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.2"
+  }
+}
