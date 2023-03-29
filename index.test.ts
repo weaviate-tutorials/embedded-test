@@ -10,7 +10,7 @@ beforeAll(async () => {
   }
   client = weaviate.client({
     scheme: 'http',
-    host: 'localhost:6666',  // TODO: remove after https://github.com/weaviate/typescript-client/issues/25
+    host: '127.0.0.1:6666',  // TODO: remove after https://github.com/weaviate/typescript-client/issues/25
     embedded: new weaviate.EmbeddedOptions({
       port: 6666,
     }),
