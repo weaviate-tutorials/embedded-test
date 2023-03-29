@@ -25,7 +25,12 @@ beforeAll(async () => {
 
 describe('objects', () => {
   beforeAll(async () => {
-    await client.schema.classDeleter().withClassName('Wine').do();
+    try {
+      await client.schema.classDeleter().withClassName('Wine').do();
+    } catch {
+      // Ignore error if class doesn't exist
+    }
+
   });
 
   test('create and fetch objects', async () => {
