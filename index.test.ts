@@ -34,7 +34,9 @@ describe('objects', () => {
   });
 
   test('create and fetch objects', async () => {
+    console.info('Creating objects');
     await createObjects(client, 3);
+    console.info('Fetching objects...');
     const response = await client.data.getter().do();
     expect(response.objects).toHaveLength(3);
   });
